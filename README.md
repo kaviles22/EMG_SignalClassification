@@ -1,6 +1,7 @@
 # EMG Signal Classification
+<p align="center">
 <img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/case.jpg" width="40%" height="30%"/> <img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/render.png" width="30%" height="20%"/>
-
+</p>
 
 ## Introduction
 This project aims to preprocess EMG signals and classify them into three classes using AI techniques to control a 3d printed prosthesis.
@@ -40,13 +41,12 @@ The peak dynamic method was used, which consists on representing each signal as 
 
 ### Feature extraction
 Two approaches were analyzed:
-1. Statistical features (Refer to EEG ignal classification github)
+1. Statistical features
 2. RMS in time windows: extracting the rms value in subwindows.
 
 Refer to: 
-
 ## Training and converting the TF model to a TF Lite model
-A tensorflow model was trained and the converted into a TF Lite model. 
+A tensorflow model was trained and then converted into a TF Lite model. 
 
 ## Deploying model and testing it on real-time.
 The whole pipeline was deployed on a ESP-C3 development board. The code was written in C# and the model output was used to activate the servo motors to move a prosthesis. 
