@@ -16,9 +16,7 @@ This project aims to preprocess EMG signals and classify them into three classes
 - [SD card module](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390)
 - Computer
 
-<p align="center">
 <img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/circuit.png" width="50%" height="40%"/>
-</p>
 
 ## Data collection
 <p align="center">
@@ -45,9 +43,7 @@ Preprocessing data is an important step, specially when working with biological 
 
 ### Filtering
 To filter out the noise we used the RMS Envelope technique, which was calculated in a 50 ms wide window.
-  <p align="center">
 <img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//filtered_signal.png" width="50%" height="40%"/>
-</p>
 
 ### Normalization
 The peak dynamic method was used, which consists on representing each signal as a ratio of the peak value of that time window. Values were kept between [0, 1] .
