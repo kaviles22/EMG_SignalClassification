@@ -57,7 +57,7 @@ Two approaches were analyzed:
 ## Training and converting the TF model to a TF Lite model
 A tensorflow model was trained and then converted into a TF Lite model. 
 
-Refer to: [src/train_test_model.py](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/train_test_model.py)
+[src/train_test_model.py](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/train_test_model.py)
 ## Deploying model and testing it on real-time.
 The whole pipeline was deployed on a ESP-C3 development board. The code was written in C# and the model output was used to activate the servo motors to move a prosthesis. 
 ![Real time testing](static/real_time.png)
