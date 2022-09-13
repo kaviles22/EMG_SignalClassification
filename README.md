@@ -4,7 +4,7 @@
 
 ## Introduction
 This project aims to preprocess EMG signals and classify them into three classes using AI techniques to control a 3d printed prosthesis.
-<img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/summary.png"  width="60%" height="50%"/>
+<img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/summary.png"  width="80%" height="70%"/>
 
 ### Tools:
 - [ESP32 C3](https://www.espressif.com/en/products/socs/esp32-c3)
@@ -13,7 +13,7 @@ This project aims to preprocess EMG signals and classify them into three classes
 - [SD card module](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390)
 - Computer
 
-<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/circuit.png" width="60%" height="50%"/>
+<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/circuit.png" width="50%" height="40%"/>
 
 ## Data collection
 ![Data collection](static/data_collect.png)
