@@ -20,7 +20,7 @@ This project aims to preprocess EMG signals and classify them into three classes
 
 ## Data collection
 <p align="center">
-<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//data_collect.png" width="80%" height="70%"/>
+<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/data_collect.png" width="80%" height="70%"/>
 </p>
 
 For this stage, a computer, running a python script and an Esp32c3, communicated using bluetooth low energy (BLE). The computer was in charge of showing on the screen when the test subject had to start performing a certain muscular action. The esp32c3 was in charge of recording the emg data using 3 MyoWare sensors, labeling it and saving it on an SD card.
@@ -37,11 +37,11 @@ Note: the ideal would be to send the data via bluetooth to the laptop, however w
 
 ## Preprocessing
 Preprocessing data is an important step, specially when working with biological signals.
-<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//myoware_signals.jpeg" width="50%" height="40%"/>
+<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/myoware_signals.jpeg" width="50%" height="40%"/>
 
 ### Filtering
 To filter out the noise we used the RMS Envelope technique, which was calculated in a 50 ms wide window.
-<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//filtered_signal.png" width="50%" height="40%"/>
+<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/filtered_signal.png" width="50%" height="40%"/>
 
 ### Normalization
 The peak dynamic method was used, which consists on representing each signal as a ratio of the peak value of that time window. Values were kept between [0, 1].
@@ -57,6 +57,7 @@ Two approaches were analyzed:
 ## Training and converting the TF model to a TF Lite model
 A tensorflow model was trained and then converted into a TF Lite model. 
 
+Refer to: [src/train_test_model.py](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/train_test_model.py)
 ## Deploying model and testing it on real-time.
 The whole pipeline was deployed on a ESP-C3 development board. The code was written in C# and the model output was used to activate the servo motors to move a prosthesis. 
 ![Real time testing](static/real_time.png)
