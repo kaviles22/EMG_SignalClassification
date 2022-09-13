@@ -2,9 +2,9 @@
 
 ## Introduction
 This project aims to preprocess EMG signals and classify them into three classes using AI techniques to control a 3d printed prosthesis.
-<img src="https://github.com/kaviles22/EEG_SignalsClassification/blob/main/static/summary.png"/>
+<img src="https://github.com/kaviles22/EMG_SignalsClassification/blob/main/static/summary.png"/>
 
-<img src="https://github.com/kaviles22/EEG_SignalsClassification/blob/main/static/render.png" width="60%" height="50%"/> <img src="https://github.com/kaviles22/EEG_SignalsClassification/blob/main/static/case.png" width="60%" height="50%"/>
+<img src="https://github.com/kaviles22/EMG_SignalsClassification/blob/main/static/render.png" width="60%" height="50%"/> <img src="https://github.com/kaviles22/EMG_SignalsClassification/blob/main/static/case.png" width="60%" height="50%"/>
 ![Prosthesis](static/render.png)
 
 
