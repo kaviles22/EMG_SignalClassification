@@ -46,6 +46,7 @@ To filter out the noise we used the RMS Envelope technique, which was calculated
 ### Normalization
 The peak dynamic method was used, which consists on representing each signal as a ratio of the peak value of that time window. Values were kept between [0, 1].
  <br />
+ <br />
 ![equation1](https://latex.codecogs.com/svg.image?X_{norm}=&space;\frac{X}{X_{peak}})
 
 ### Feature extraction
@@ -53,7 +54,6 @@ Two approaches were analyzed:
 1. Statistical features
 2. RMS in time windows: extracting the rms value in subwindows.
 
-Refer to: 
 ## Training and converting the TF model to a TF Lite model
 A tensorflow model was trained and then converted into a TF Lite model. 
 
