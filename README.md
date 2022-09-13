@@ -51,13 +51,13 @@ The peak dynamic method was used, which consists on representing each signal as 
 ![equation1](https://latex.codecogs.com/svg.image?X_{norm}=&space;\frac{X}{X_{peak}})
 
 ### Feature extraction
-[src/feature_extraction/feature_extraction.ipynb](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/feature_extraction/feature_extraction.ipynb)
+[src/feature_extraction/feature_extraction.ipynb](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/feature_extraction/feature_extraction.ipynb)<br />
 Two approaches were analyzed:
 1. Statistical features
 2. RMS in time windows: extracting the rms value in subwindows.
 
 ## Training and converting the TF model to a TF Lite model
-[src/train_model/train_test_model.py](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/train_model/train_test_model.py)
+[src/train_model/train_test_model.py](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/train_model/train_test_model.py)<br />
 A tensorflow model was trained and then converted into a TF Lite model. 
 
 ## Deploying model and testing it on real-time.
