@@ -16,10 +16,10 @@ This project aims to preprocess EMG signals and classify them into three classes
 <img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/circuit.png" width="50%" height="40%"/>
 
 ## Data collection
-<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//data_collect.png" width="60%" height="50%"/>
+<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//data_collect.png" width="80%" height="70%"/>
 
 For this stage, a computer, running a python script and an Esp32c3, communicated using bluetooth low energy (BLE). The computer was in charge of showing on the screen when the test subject had to start performing a certain muscular action. The esp32c3 was in charge of recording the emg data using 3 MyoWare sensors, labeling it and saving it on an SD card. <\br>
-<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//ble_communication.png" width="60%" height="50%"/>
+<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//ble_communication.png" width="80%" height="70%"/>
 
 ### Screen visuals
 The experiment shows visual signs to let the subject jnow when to perform certain actions.
