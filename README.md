@@ -29,7 +29,7 @@ Note: the ideal would be to send the data via bluetooth to the laptop, however w
 
 ## Preprocessing
 Preprocessing data is an important step, specially when working with biological signals.
-<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//myoware_signals.jpeg" width="70%" height="60%"/>
+<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//myoware_signals.jpeg" width="50%" height="40%"/>
 
 ### Filtering
 To filter out the noise we used the RMS Envelope technique, which was calculated in a 50 ms wide window.
