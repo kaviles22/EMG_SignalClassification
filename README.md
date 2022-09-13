@@ -33,6 +33,8 @@ Preprocessing data is an important step, specially when working with biological 
 
 ### Filtering
 To filter out the noise we used the RMS Envelope technique, which was calculated in a 50 ms wide window.
+<img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//filtered_signal.png" width="70%" height="60%"/>
+
 ![RMS envelope](static/filtered_signal.png)
 ### Normalization
 The peak dynamic method was used, which consists on representing each signal as a ratio of the peak value of that time window. Values were kept between [0, 1] .
