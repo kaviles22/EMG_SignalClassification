@@ -2,8 +2,17 @@
 
 ## Introduction
 This project aims to preprocess EMG signals and classify them into three classes using AI techniques to control a 3d printed prosthesis.
-![Experiment flow diagram](static/summary.png)
+![Experiment flow diagram](static/summary.png, width="60%" height="50%)
 ![Prosthesis](static/render.png)
+
+### Tools:
+- [ESP32 C3](https://www.espressif.com/en/products/socs/esp32-c3)
+- [MyoWare sensors](https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MyowareUserManualAT-04-001.pdf)
+- Servo motors
+- [SD card module](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390)
+- Computer
+
+![Circuit](circuit.png)
 
 ## Data collection
 ![Data collection](static/data_collect.png)
