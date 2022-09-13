@@ -25,6 +25,7 @@ This project aims to preprocess EMG signals and classify them into three classes
 
 For this stage, a computer, running a python script and an Esp32c3, communicated using bluetooth low energy (BLE). The computer was in charge of showing on the screen when the test subject had to start performing a certain muscular action. The esp32c3 was in charge of recording the emg data using 3 MyoWare sensors, labeling it and saving it on an SD card.
 
+[src/data_collection](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/data_collection)
 <p align="center">
 <img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//ble_communication.png" width="80%" height="70%"/>
 </p>
@@ -54,10 +55,11 @@ Two approaches were analyzed:
 1. Statistical features
 2. RMS in time windows: extracting the rms value in subwindows.
 
+[src/feature_extraction/feature_extraction.ipynb](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/feature_extraction/feature_extraction.ipynb)
 ## Training and converting the TF model to a TF Lite model
 A tensorflow model was trained and then converted into a TF Lite model. 
 
-[src/train_test_model.py](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/train_test_model.py)
+[src/train_model/train_test_model.py](https://github.com/kaviles22/EMG_SignalClassification/blob/main/src/train_model/train_test_model.py)
 ## Deploying model and testing it on real-time.
 The whole pipeline was deployed on a ESP-C3 development board. The code was written in C++ and the model output was used to activate the servo motors to move a prosthesis. 
 ![Real time testing](static/real_time.png)
