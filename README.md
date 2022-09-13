@@ -1,5 +1,5 @@
 # EMG Signal Classification
-<img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/render.png" width="30%" height="20%"/> <img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/case.jpg" width="40%" height="30%"/>
+<img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/case.jpg" width="40%" height="30%"/> <img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/render.png" width="30%" height="20%"/>
 
 
 ## Introduction
