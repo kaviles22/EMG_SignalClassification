@@ -1,11 +1,9 @@
 # EMG Signal Classification
+<img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/render.png" width="30%" height="20%"/> 
 
 ## Introduction
 This project aims to preprocess EMG signals and classify them into three classes using AI techniques to control a 3d printed prosthesis.
 <img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/summary.png"  width="60%" height="50%"/>
-
-<img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/render.png" width="30%" height="20%"/> <img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/case.jpg" width="40%" height="30%"/>
-
 
 ### Tools:
 - [ESP32 C3](https://www.espressif.com/en/products/socs/esp32-c3)
@@ -49,3 +47,5 @@ A tensorflow model was trained and the converted into a TF Lite model.
 ## Deploying model and testing it on real-time.
 The whole pipeline was deployed on a ESP-C3 development board. The code was written in C# and the model output was used to activate the servo motors to move a prosthesis. 
 ![Real time testing](static/real_time.png)
+
+<img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/case.jpg" width="40%" height="30%"/>
