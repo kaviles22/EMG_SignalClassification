@@ -24,20 +24,21 @@ This project aims to preprocess EMG signals and classify them into three classes
 <img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/data_collect.png" width="80%" height="70%"/>
 </p>
 
-For this stage, a computer, running a python script and an Esp32c3, communicated using bluetooth low energy (BLE). The computer was in charge of showing on the screen when the test subject had to start performing a certain muscular action. The esp32c3 was in charge of recording the emg data using 3 MyoWare sensors, labeling it and saving it on an SD card.
+For this stage, a computer, running a python script and an Esp32c3, communicated using bluetooth low energy (BLE). The computer was in charge of indicating the tests subject when to start performing a certain muscular action. The esp32c3 was in charge of recording the emg data using 3 MyoWare sensors, labeling it and saving it on an SD card.
+
+Note: the ideal would have been to send the data via bluetooth to the computer, however we were unable to find a way to do this quickly without affecting the data recording process which was done at a frequency of 1kHz. 
 
 <p align="center">
 <img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static//ble_communication.png" width="80%" height="70%"/>
 </p>
 
 ### Screen visuals
-The experiment shows visual signs to let the subject jnow when to perform certain actions.
+The python script shows visual signs on the screen, representing each one of the actions. Between each recording interval, a resting sign appears, which means the test subject can stop performing the previous action.
 ![Screen visuals](static/screen_visuals.png)
-
-Note: the ideal would be to send the data via bluetooth to the laptop, however we were unable to find a way to do this quickly without affecting the data recording which was done at 1kHz. 
 
 ## Preprocessing
 Preprocessing data is an important step, specially when working with biological signals.
+
 <img src= "https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/myoware_signals.jpeg" width="50%" height="40%"/>
 
 ### Filtering
@@ -61,6 +62,6 @@ Two approaches were analyzed:
 A tensorflow model was trained and then converted into a TF Lite model. 
 
 ## Deploying model and testing it on real-time.
-The whole pipeline was deployed on a ESP-C3 development board. The code was written in C++ and the model output was used to activate the servo motors to move a prosthesis. 
+The whole pipeline was deployed on a ESP-C3 development board. The code was written in C++ and the model output was used to activate 2 servo motors to move the 3d printed prosthesis. 
 ![Real time testing](static/real_time.png)
 
