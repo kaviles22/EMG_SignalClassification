@@ -1,4 +1,7 @@
 # EMG Signal Classification
+## ➡️ When using this resource, please cite the original publication:
+- [Avilés-Mendoza, K., Gaibor-León, N. G., Asanza, V., Lorente-Leyva, L. L., & Peluffo-Ordóñez, D. H. (2023). A 3D Printed, Bionic Hand Powered by EMG Signals and Controlled by an Online Neural Network. Biomimetics, 8(2), 255.](https://doi.org/10.3390/biomimetics8020255)
+
 <p align="center">
 <img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/case.jpg" width="40%" height="30%"/> <img src="https://github.com/kaviles22/EMG_SignalClassification/blob/main/static/render.png" width="30%" height="20%"/>
 </p>
